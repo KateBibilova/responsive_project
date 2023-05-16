@@ -14,7 +14,7 @@
         order: -2;
     }
 
-    .header_divider:first-child {
+    .header_divider {
         order: -1;
     }
     .header_divider:last-child {
@@ -44,7 +44,6 @@
         top: 250px;
         border-radius: 6px;
     }
-
 }
 
 @media (min-width: 1120px) {
@@ -82,8 +81,9 @@
     .main_btn {
         display: flex;
         width: 180px;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
+
     }
 
     .btn_text {
@@ -125,8 +125,29 @@
         row-gap: 20px;
     }
 
-    .navbar_item:last-child {
-        margin-left: 14px;
+    /*.navbar_item:last-child {*/
+    /*    margin-left: 14px;*/
+    /*}*/
+
+    .btn.repair::before {
+        content: "Оставить заявку";
+        font-family: "TTLakes-Medium", serif;
+        color: #1B1C21;
+        font-size: 16px;
+        white-space: nowrap;
+        position: relative;
+        bottom: 2px;
+        left: -145px;
     }
 
+    .status::before {
+        content: "Статус ремонта";
+        font-family: "TTLakes-Medium", serif;
+        color: #1B1C21;
+        font-size: 16px;
+        white-space: nowrap;
+        position: absolute;
+        top: 32px;
+        right: 85px;
+    }
 }

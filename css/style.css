@@ -42,8 +42,8 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.header_divider:first-child {
-    order: 3;
+.header_divider {
+    order: 5;
 }
 .header_divider:last-child {
     display: none;
