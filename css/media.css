@@ -14,10 +14,10 @@
         order: -2;
     }
 
-    .header_divider_1 {
+    .header_divider:first-child {
         order: -1;
     }
-    .header_divider_2 {
+    .header_divider:last-child {
         display: inline-block;
         order: 1;
     }
@@ -113,11 +113,11 @@
         bottom: 230px;
     }
 
-    .nav-bar::after {
+    .navbar::after {
         display: none;
     }
 
-    .nav-bar {
+    .navbar {
         max-width: 1120px;
         gap: 40px;
         overflow-x: visible;
@@ -125,7 +125,8 @@
         row-gap: 20px;
     }
 
-    .last_item {
+    .navbar_item:last-child {
         margin-left: 14px;
     }
+
 }
