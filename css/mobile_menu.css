@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobile_menu {
+    width: 320px;
+    background: #f8f8f8;
+    padding-top: 18px;
+    height: 100vh;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+/*HEADER*/
+.header {
+    width: 320px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px 0 24px;
+}
+
+/*MAIN LIST*/
+.menu_categories_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    list-style-type: none;
+    gap: 32px;
+}
+
+.menu_categories_list a {
+    font-family: "TTLakes-Medium", serif;
+    font-size: 16px;
+    color: #1B1C21;
+    text-decoration: none;
+    padding-left: 24px;
+}
+
+.menu_categories_list a:hover {
+    color: #7E7E82;
+}
+
+.menu_item_active a{
+    color: #7E7E82;
+    position: relative;
+}
+
+.menu_item_active::before {
+    content: url("../img/icons/highlight.svg");
+    display: inline-block;
+    position: absolute;
+    transform: translateY(-10px);
+}
+
+/*BUTTONS top*/
+.btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.close {
+  background-image: url("../img/icons/burger.svg");
+}
+
+.search {
+    background-image: url("../img/icons/search.svg");
+    margin-left: 60px ;
+}
+
+/*BUTTONS bottom*/
+.contact_btns {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 24px;
+}
+
+.call {
+    background-image: url("../img/icons/call.svg");
+}
+
+.chat {
+    background-image: url("../img/icons/chat.svg");
+}
+
+.profile {
+    background-image: url("../img/icons/profile.svg");
+}
+
+/*CONTACTS*/
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 245px;
+}
+
+.email {
+    font-family: "TTLakes-Medium", serif;
+    font-size: 16px;
+    color: #1B1C21;
+    text-decoration: none;
+    margin-top: 16px;
+    padding-left: 24px;
+}
+
+.phone_number {
+    text-decoration: none;
+    margin-top: 12px;
+    padding-left: 24px;
+}
+
+.phone_number pre{
+    font-family: "TTLakes-Bold", serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1B1C21;
+}
+
+/*LANGUAGE*/
+.language {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-left: 24px;
+    list-style-type: none;
+}
+
+.language_item {
+    font-family: "TTLakes-Medium", serif;
+    font-size: 16px;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.language a:hover {
+    color: #7E7E82;
+}
+
+.language_active {
+    color: #FF3E79;
+}
+
