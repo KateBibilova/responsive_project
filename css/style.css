@@ -11,7 +11,6 @@ body {
 .main-page {
     position: relative;
     width: 100%;
-    min-height: 100vh;
     padding: 100px;
     display: flex;
     align-items: center;
@@ -207,3 +206,74 @@ body {
 .content_img {
     width: 100%;
 }
+/*-----------------------------------------------*/
+/*BRAND LIST SECTION*/
+
+.brand_list_title {
+    width: 100%;
+    background: #ffffff;
+    font-family: "TTLakes-Medium", serif;
+    color: #7E7E82;
+    padding: 16px;
+    margin-top: 30px;
+    border-top: #41F6D7 solid 1px;
+    min-width: 0;
+}
+
+.card-slider_content {
+    width: 224px;
+    height: 72px;
+    background-color: white;
+    padding: 16px;
+    border: #EAEAEA solid 1px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 0;
+    min-width: 100%;
+}
+
+.card-slider_content div {
+    max-width: 100%;
+}
+
+.go {
+    background-image: url("../img/icons/go.svg");
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+/*---------------------------*/
+
+.wrapper {
+    padding: 16px;
+    height: 140px;
+    overflow: scroll;
+}
+
+.card-slider {
+    /*width: 224px;*/
+    padding: 0 0 70px 0;
+
+}
+.card-slider_slide .swiper-slide-active {
+  display: inline-block;
+    width: 224px;
+}
+
+.card-slider .swiper-pagination {
+    position: relative;
+}
+
+.card-slider .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #B5B6BC;
+}
+/*-----------------------*/
