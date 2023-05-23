@@ -209,14 +209,14 @@ body {
 /*-----------------------------------------------*/
 /*BRAND LIST SECTION*/
 
-.brand_list_title {
+.section_title {
     width: 100%;
     background: #ffffff;
     font-family: "TTLakes-Medium", serif;
     color: #7E7E82;
     padding: 16px;
     margin-top: 30px;
-    border-top: #41F6D7 solid 1px;
+    border-top: #D9FFF5 solid 1px;
     min-width: 0;
 }
 
@@ -253,18 +253,16 @@ body {
 
 .wrapper {
     padding: 16px;
-    height: 140px;
-    overflow: scroll;
+    height: 120px;
 }
 
 .card-slider {
-    /*width: 224px;*/
     padding: 0 0 70px 0;
 
 }
 .card-slider_slide .swiper-slide-active {
   display: inline-block;
-    width: 224px;
+  width: 224px;
 }
 
 .card-slider .swiper-pagination {
@@ -277,3 +275,26 @@ body {
     background: #B5B6BC;
 }
 /*-----------------------*/
+.card_section {
+    display: none;
+}
+
+.card_section_item {
+    width: 224px;
+    height: 72px;
+    background-color: white;
+    padding: 16px;
+    border: #EAEAEA solid 1px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.link_container {
+    display: none;
+}
+.show_all_link {
+    display: none;
+}

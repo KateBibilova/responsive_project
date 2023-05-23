@@ -36,6 +36,10 @@
         display: inline-block;
     }
 
+    .content {
+        padding: 24px 24px;
+    }
+
     .content_img {
         width: 40%;
         position: absolute;
@@ -44,12 +48,44 @@
         top: 250px;
         border-radius: 6px;
     }
+
+    /*------------------*/
+    /*2 раздел*/
+    .wrapper {
+        display: none;
+    }
+
+    .card_section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        text-align: center;
+        padding: 24px;
+        align-content: center;
+    }
+
+    .link_container {
+        display: flex;
+        margin: auto;
+        max-width: 1096px;
+        padding-left: 24px;
+    }
+
+    .show_all_link {
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        cursor: pointer;
+    }
+
 }
 
 @media (min-width: 1120px) {
     .main_page {
         margin: auto;
         max-width: 1120px;
+        height: 537px;
     }
 
     .content {
@@ -125,10 +161,6 @@
         row-gap: 20px;
     }
 
-    /*.navbar_item:last-child {*/
-    /*    margin-left: 14px;*/
-    /*}*/
-
     .btn.repair::before {
         content: "Оставить заявку";
         font-family: "TTLakes-Medium", serif;
@@ -150,4 +182,44 @@
         top: 32px;
         right: 85px;
     }
+
+    /*------------------*/
+    /*2 раздел*/
+    .wrapper {
+        display: none;
+    }
+    .section_title {
+        background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);;
+    }
+
+    .section_title_text {
+        display: flex;
+        margin: auto;
+        max-width: 1072px;
+    }
+
+    .card_section {
+        margin: auto;
+        max-width: 1071px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 37px;
+        text-align: center;
+        padding: 24px 0 24px 0;
+    }
+
+    .link_container {
+        display: flex;
+        margin: auto;
+        max-width: 1072px;
+    }
+
+    .show_all_link {
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        cursor: pointer;
+    }
+
 }
