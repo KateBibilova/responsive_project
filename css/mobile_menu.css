@@ -22,6 +22,11 @@
     padding: 0 24px 0 24px;
 }
 
+.logo:hover {
+    filter: brightness(80%) contrast(90%);
+}
+
+
 /*MAIN LIST*/
 .menu_categories_list {
     display: flex;
@@ -43,16 +48,11 @@
     color: #7E7E82;
 }
 
-.menu_item_active a{
-    color: #7E7E82;
-    position: relative;
-}
-
-.menu_item_active::before {
+.menu_categories_list :hover ::before {
     content: url("../img/icons/highlight.svg");
     display: inline-block;
     position: absolute;
-    transform: translateY(-10px);
+    transform: translate(-24px, -10px);
 }
 
 /*BUTTONS top*/
@@ -62,6 +62,12 @@
     border: none;
     background-color: inherit;
     cursor: pointer;
+}
+
+.btn:hover {
+    /*transform: translateY(-6px);*/
+    transition: .3s;
+    transform: scale(1.2);
 }
 
 .close {
@@ -147,3 +153,11 @@
     color: #FF3E79;
 }
 
+.email:hover {
+    color: #FF3E79;
+    text-decoration: underline;
+}
+.phone_number pre:hover {
+    color: #FF3E79;
+    text-decoration: underline;
+}

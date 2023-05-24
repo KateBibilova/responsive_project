@@ -55,6 +55,9 @@
         display: none;
     }
 
+    .section_title {
+        padding: 16px 24px 16px 24px;
+    }
     .card_section {
         display: flex;
         flex-wrap: wrap;
