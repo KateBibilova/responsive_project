@@ -5,11 +5,11 @@
 }
 
 .mobile_menu {
-    width: 320px;
+    max-width: 320px;
     background: #f8f8f8;
     padding: 18px 0 24px 0;
-    height: 100%;
-    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    height: 100vh;
+    box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
 }
 
 /*HEADER*/
