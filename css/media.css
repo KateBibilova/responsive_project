@@ -49,6 +49,16 @@
         border-radius: 6px;
     }
 
+    .mobile_menu {
+        width: 320px;
+    }
+
+
+
+
+
+
+
     /*------------------*/
     /*2 раздел*/
     .wrapper {
@@ -225,4 +235,9 @@
         cursor: pointer;
     }
 
+    .mobile_menu {
+        width: 320px;
+    }
+
 }
+
