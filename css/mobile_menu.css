@@ -1,4 +1,5 @@
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,8 +8,6 @@
     width:320px;
     min-height:100vh;
     position: relative;
-    left: -8px;
-    top: -8px;
     bottom: auto;
     box-shadow: -40px 0 120px 5px #7E7E82;
 }
