@@ -10,6 +10,7 @@
     bottom: auto;
     box-shadow: -40px 0 120px 5px #7E7E82;
     position: absolute;
+    display: table;
 }
 
 /*HEADER*/
@@ -29,7 +30,8 @@
 /*MAIN LIST*/
 .main {
     margin-top: 45px;
-    /*min-height: calc(100vh - 150px);*/
+    display: table-row;
+    height: 100%;
 }
 
 .menu a {
@@ -66,7 +68,6 @@
 }
 
 .btn:hover {
-    /*transform: translateY(-6px);*/
     transition: .3s;
     transform: scale(1.2);
     box-shadow: 0 0 10px 5px lightpink;
@@ -164,12 +165,4 @@
 .phone_number pre:hover {
     color: #FF3E79;
     text-decoration: underline;
-}
-
-.footer {
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
