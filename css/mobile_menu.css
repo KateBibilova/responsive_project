@@ -1,5 +1,4 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,9 +6,9 @@
 .mobile_menu {
     width:320px;
     min-height:100vh;
-    position: absolute;
-    /*left: -8px;*/
-    /*top:-8px;*/
+    position: relative;
+    left: -8px;
+    top: -8px;
     bottom: auto;
     box-shadow: -40px 0 120px 5px #7E7E82;
 }
@@ -64,12 +63,16 @@
     border: none;
     background-color: inherit;
     cursor: pointer;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
 }
 
 .btn:hover {
     /*transform: translateY(-6px);*/
     transition: .3s;
     transform: scale(1.2);
+    box-shadow: 0 0 10px 5px lightpink;
 }
 
 .close {
@@ -83,7 +86,7 @@
 
 /*BUTTONS bottom*/
 .contact_btns {
-    width: 174px;
+    width: 180px;
     display: flex;
     justify-content: space-between;
     padding-left: 24px;
@@ -105,7 +108,7 @@
 .contacts {
     display: flex;
     flex-direction: column;
-    margin-top: 245px;
+    margin-top: 100px;
 }
 
 .email {
