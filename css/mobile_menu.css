@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    position:fixed;
+}
+
 .mobile_menu {
-    width: 100%;
+    width: 320px;
     background: #f8f8f8;
     padding: 18px 0 24px 0;
-    height: 100vh;
-    box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
+    min-height:100vh;
+    position: absolute;
+    bottom: auto;
+    box-shadow: -40px 0 120px 5px #7E7E82;
 }
 
 /*HEADER*/
