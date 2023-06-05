@@ -122,76 +122,93 @@
 </div>
 </div>
 
-<div class="card_section">
-    <div class="card_section_item">
-        <img src="./img/brand_logos/lenovo.png" alt="lenovo" width="108" height="32">
-        <button class="go"></button>
+
+<!--слайдер для планшета и декстопа-->
+<!--<div class="card_section_container">-->
+    <div class="card_section show_all_container">
+        <div class="card_section_item">
+            <img src="./img/brand_logos/lenovo.png" alt="lenovo" width="108" height="32">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/samsung.png" alt="samsung" width="116" height="39">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/apple.png" alt="apple" width="44" height="44">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/view_sonic.png" alt="view sonic" width="128" height="21">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/bosch.png" alt="bosch">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/hp.png" alt="hp">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/acer.png" alt="acer">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/sony.png" alt="sony">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/apple.png" alt="apple">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/view_sonic.png" alt="view sonic">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/bosch.png" alt="bosch">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/samsung.png" alt="samsung">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/acer.png" alt="acer">
+            <button class="go"></button>
+        </div>
+        <div class="card_section_item">
+            <img src="./img/brand_logos/sony.png" alt="sony">
+            <button class="go"></button>
+        </div>
     </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/samsung.png" alt="samsung" width="116" height="39">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/apple.png" alt="apple" width="44" height="44">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/view_sonic.png" alt="view sonic" width="128" height="21">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/bosch.png" alt="bosch">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/hp.png" alt="hp">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/acer.png" alt="acer">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/sony.png" alt="sony">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/apple.png" alt="apple">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/view_sonic.png" alt="view sonic">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/bosch.png" alt="bosch">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/samsung.png" alt="samsung">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/acer.png" alt="acer">
-        <button class="go"></button>
-    </div>
-    <div class="card_section_item">
-        <img src="./img/brand_logos/sony.png" alt="sony">
-        <button class="go"></button>
-    </div>
-</div>
+
 
 <div class="link_container">
     <div class="show_all_link">
         <img alt="icon" class="article_link_decoration" src="img/icons/read_more.svg">
-        <a class="article_link_text" href="./pages_and_components/mobile_menu.html">Показать все</a>
+        <btn class="article_link_text show_all" href="#"></btn>
     </div>
 </div>
+<!--</div>-->
+
 <!--3 раздел-->
 <div class="section_title"><div class="section_title_text">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</div></div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
+
+<script>
+    let more = document.querySelectorAll('.show_all');
+    let moreContainer = document.querySelector('.show_all_container')
+    for (let i = 0; i < more.length; i++){
+        more[i].addEventListener('click', function(){
+            more[i].parentNode.classList.toggle('active')
+            moreContainer[i].classList.toggle('active')
+        })
+    }
+</script>
 </body>
 </html>

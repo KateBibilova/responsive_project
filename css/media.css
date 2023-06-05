@@ -216,7 +216,8 @@
         max-width: 1071px;
         display: flex;
         flex-wrap: wrap;
-        gap: 37px;
+        row-gap: 16px;
+        column-gap: 32px;
         text-align: center;
         padding: 24px 0 24px 0;
     }
@@ -230,13 +231,44 @@
     .show_all_link {
         width: 130px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: baseline;
         cursor: pointer;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .show_all_link.active {
+        width: 130px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        cursor: pointer;
+        gap: 16px;
+        background: none;
+        border: none;
     }
 
     .mobile_menu {
         width: 320px;
+    }
+
+     .show_all_link .show_all::before {
+        content: 'Показать все';
+    }
+
+    .show_all_link.active .show_all::before {
+        content: 'Скрыть';
+    }
+
+    .card_section {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .card_section.active {
+        overflow: visible;
     }
 
 }
