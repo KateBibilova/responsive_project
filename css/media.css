@@ -1,57 +1,11 @@
+@media (min-width: 381px) and (max-width: 767px) {
+    .card-slider::after {
+        top: 95px;
+        right: 5px;
+    }
+}
 @media (min-width: 768px) and (max-width: 1119px) {
-    .header_right_part {
-        width: 282px;
-    }
 
-    .extra_btns {
-        display: flex;
-        width: 170px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu {
-        order: -2;
-    }
-
-    .header_divider {
-        order: -1;
-    }
-    .header_divider:last-child {
-        display: inline-block;
-        order: 1;
-    }
-
-    .main_btn {
-        order: 2;
-    }
-
-    .btn_text {
-        display: none;
-    }
-
-    .article_text {
-        height: 146px;
-        width: 50%;
-        display: inline-block;
-    }
-
-    .content {
-        padding: 24px 24px;
-    }
-
-    .content_img {
-        width: 40%;
-        position: absolute;
-        right: 16px;
-        left: auto;
-        top: 250px;
-        border-radius: 6px;
-    }
-
-    .mobile_menu {
-        width: 320px;
-    }
 /*---------------------------------------*/
     .wrapper {
         display: none;
