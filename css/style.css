@@ -291,6 +291,27 @@ body {
     align-items: center;
     text-align: center;
 }
+/*.fade {*/
+/*    background: linear-gradient(270deg, #f8f8f8 16.84%, green 100%);*/
+/*    position: fixed;*/
+/*    left: 320px;*/
+/*    !*background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%);*!*/
+/*    width: 44px;*/
+/*    height: 82px;*/
+/*    z-index: 5;*/
+
+/*}*/
+/*.card-slider_wrapper::before {*/
+/*    content: " ";*/
+/*    position: fixed;*/
+/*    right: -20px;*/
+/*    width: 44px;*/
+/*    height: 82px;*/
+/*    background: linear-gradient(270deg, #f8f8f8 16.84%, green 100%);*/
+/*    z-index: 5;*/
+
+/*    !*background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%);*!*/
+/*}*/
 
 .link_container {
     display: none;

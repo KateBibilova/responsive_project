@@ -52,45 +52,90 @@
     .mobile_menu {
         width: 320px;
     }
-
-
-
-
-
-
-
-    /*------------------*/
-    /*2 раздел*/
+/*---------------------------------------*/
     .wrapper {
         display: none;
     }
-
     .section_title {
-        padding: 16px 24px 16px 24px;
+        background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);;
     }
+
+    .section_title_text {
+        display: flex;
+        margin: auto;
+        max-width: 1072px;
+    }
+
     .card_section {
+        margin: auto;
+        max-width: 1071px;
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        row-gap: 16px;
+        column-gap: 32px;
         text-align: center;
-        padding: 24px;
-        align-content: center;
+        padding: 24px 0 0 24px;
     }
 
     .link_container {
         display: flex;
         margin: auto;
-        max-width: 1096px;
+        max-width: 1072px;
         padding-left: 24px;
     }
 
     .show_all_link {
         width: 130px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: baseline;
         cursor: pointer;
+        column-gap: 16px;
     }
+
+    .show_all_link.active {
+        width: 130px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        cursor: pointer;
+        column-gap: 16px;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    .mobile_menu {
+        width: 320px;
+    }
+
+    .show_all_link .show_all::before {
+        content: 'Показать все';
+    }
+
+    .show_all_link.active {
+        margin-top: 24px;
+    }
+
+    .show_all_link.active .show_all::before {
+        content: 'Скрыть';
+    }
+
+    .card_section {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+    .card_section::after {
+        display: none;
+    }
+
+    .show_all_container.active {
+        height: auto;
+        background: none;
+        border: none;
+    }
+
 
 }
 
@@ -234,8 +279,7 @@
         justify-content: flex-start;
         align-items: baseline;
         cursor: pointer;
-        gap: 16px;
-        margin-top: 24px;
+        column-gap: 16px;
     }
 
     .show_all_link.active {
@@ -244,7 +288,7 @@
         justify-content: flex-start;
         align-items: baseline;
         cursor: pointer;
-        gap: 16px;
+        column-gap: 16px;
         background: none;
         border: none;
     }
@@ -266,9 +310,17 @@
         height: 200px;
         overflow: hidden;
     }
+    .card_section::after {
+        display: none;
+    }
 
-    .card_section.active {
-        overflow: visible;
+    .show_all_container.active {
+        height: auto;
+        background: none;
+        border: none;
+    }
+    .show_all_link.active {
+        padding: 0;
     }
 
 }
